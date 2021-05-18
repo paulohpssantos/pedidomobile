@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pedidologo"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="novoPedido"
+        android:drawableLeft="@drawable/ic_novo"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/novopedido"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="listaPedidos"
+        android:drawableLeft="@drawable/ic_lista"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/listagempedido"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"/>
+
+
+
+</LinearLayout>

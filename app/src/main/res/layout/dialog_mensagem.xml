@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/layout_header"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvMensagem"
+        android:lines="5"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btCancela"
+            android:drawableLeft="@drawable/ic_cancel"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/nao"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/holo_red_dark"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btOk"
+            android:drawableLeft="@drawable/ic_salvar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Ok"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btConfirma"
+            android:drawableLeft="@drawable/ic_salvar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/sim"
+            android:padding="10dp"
+            android:background="@color/green"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
