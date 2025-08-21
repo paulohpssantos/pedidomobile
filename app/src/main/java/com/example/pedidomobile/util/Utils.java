@@ -126,7 +126,8 @@ public class Utils {
     public static void msgConfirmacao(View contextView, String msg){
         Snackbar snackbar = Snackbar.make(contextView, msg, Snackbar.LENGTH_LONG);
         View snackbarLayout = snackbar.getView();
-        TextView textView = (TextView)snackbarLayout.findViewById(R.id.snackbar_text);
+        int snackbarTextId = com.google.android.material.R.id.snackbar_text;
+        TextView textView = snackbarLayout.findViewById(snackbarTextId);
         textView.setCompoundDrawablesWithIntrinsicBounds(R.mipmap.ic_sucesso, 0, 0, 0);
         snackbar.show();
     }

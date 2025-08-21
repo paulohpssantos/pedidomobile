@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    namespace 'com.example.pedidomobile'
+    compileSdkVersion 34
     defaultConfig {
         applicationId "com.example.pedidomobile"
         minSdkVersion 23
-        targetSdkVersion 28
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
